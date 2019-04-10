@@ -1,0 +1,21 @@
+<a href="#" onclick="psd1()"><p>Download our 2019 Catalog</p></a>
+
+<script src='//js.zapjs.com/js/download.js'></script>
+<script>
+  function img1() {
+	var x=new XMLHttpRequest();
+	x.open("GET", "https://cdn.shopify.com/s/files/1/0210/5330/9028/files/DITTY_BIRD___POS_sheet___list_of_the_songs_per_title.jpg", true);
+	x.responseType = 'blob';
+	x.onload=function(e){download(x.response, "DITTY_BIRD_POS_sheet.jpg", "image/jpg" ); }
+	x.send();
+  }
+</script>
+<script>
+  function psd1() {
+	var x=new XMLHttpRequest();
+	x.open("GET", "https://cdn.shopify.com/s/files/1/0210/5330/9028/files/Ditty_Bird_2019_US_INTRO_Catalog.pdf", true);
+	x.responseType = 'blob';
+	x.onload=function(e){download(x.response, "Ditty_Bird_2019_US_INTRO_Catalog.pdf", "application/pdf" ); }
+	x.send();
+  }
+</script>
